@@ -4,3 +4,6 @@ module.exports.home = function(req,res){
 module.exports.secondhome = function(req,res){
     return res.end('<h1>welcome to the school</h1>');
 }
+module.exports.action = function(req,res){
+    return res.end('<h1>welcome to the action</h1>');
+}

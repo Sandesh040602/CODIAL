@@ -8,6 +8,8 @@ const homeController = require('../controllers/home_controllers');
 router.get('/',homeController.home);// if / comes then it will go to homeController.home which was required by controller 
 router.get('/h2',homeController.secondhome);// this is our second link that you can access from the same controller you here knows that a 
 // a controller can ave multiple links
+router.use('/users',require('./users'));
+router.use('/posts',require('./posts'));
 console.log('Router is up and exported.');
 
 module.exports = router ;//exporting the router
