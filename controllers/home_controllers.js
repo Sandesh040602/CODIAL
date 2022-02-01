@@ -1,5 +1,8 @@
 module.exports.home = function(req,res){
-    return res.end('<h1>We are the one who can make it happen!</h1>');
+   return res.render('home',{
+       title: "home",
+       tittle: "home equals hostel"
+   })
 }
 module.exports.secondhome = function(req,res){
     return res.end('<h1>welcome to the school</h1>');

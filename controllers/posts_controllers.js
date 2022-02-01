@@ -1,3 +1,6 @@
 module.exports.posts = function(req,res){
-    return res.end('<p>you are at postcontroller!</p>')
+    return res.render('posts',{
+        title: "POSTS",
+        NAV : "POP"
+    })
 }
