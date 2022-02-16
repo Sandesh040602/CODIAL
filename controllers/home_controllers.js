@@ -1,7 +1,6 @@
 module.exports.home = function(req,res){
    return res.render('home',{
-       title: "home",
-       tittle: "home equals hostel"
+       title: "home"
    })
 }
 module.exports.secondhome = function(req,res){
