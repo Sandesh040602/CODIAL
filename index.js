@@ -5,6 +5,17 @@ const port = 8000;
 const db = require('./config/mongoose');
 console.log('hi');
 const Todo = require('./models/todo');
+
+// acquiring controllers so that to use them in different cases
+app.use(express.urlencoded({
+    extended: true
+  }));// this will encode string to object value// merging the present directory with our views name 
+// // setting up the middle ware so be able to parse the code
+app.use(function(req,res,next){
+    console.log(req.body);
+    next();
+});
+
 // setting up the view engine
 app.set('view engine','ejs');
 app.set('views', './views');

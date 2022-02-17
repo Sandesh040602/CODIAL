@@ -9,7 +9,7 @@ router.get('/',homeController.home);// if / comes then it will go to homeControl
 router.get('/h2',homeController.secondhome);// this is our second link that you can access from the same controller you here knows that a 
 // a controller can ave multiple links
 router.use('/users',require('./users'));
-router.use('/posts',require('./posts'));
+router.use('/todo-list',require('./posts'));
 console.log('Router is up and exported.');
 
 module.exports = router ;//exporting the router
