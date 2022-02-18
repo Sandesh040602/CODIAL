@@ -8,17 +8,18 @@
         <%= locals.title%>
     </title>
     <script src="https://kit.fontawesome.com/2572eefa21.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    
     <h1>
         <i class="fas fa-archive"></i>
         My Contact List !!</h1>
         
 
-    <form action="/todo-list" method="post" >
+    <form action="/todo-list" method="post" class="inputs">
         <label for="disc">Write a description:</label>
-        <input type="text" placeholder="add discription" required name="name" id="disc">
+        <input type="text" placeholder="" required name="name" id="disc">
         
         <label for="category">Choose a date:</label>
         <input type="date" placeholder="enter the date" required name="phonenos" id="date">
@@ -39,18 +40,19 @@
         <p><%=i.date%></p>
         <%}%>
     </ul> -->
-    <form action="/delete-list" method="post">
+    <form class="delete" action="/delete-list" method="post">
+        <button type="submit">DELETE TODO</button>
         <div>
         <% for(let i of todo_lis){%>
-            <div>
-            <input type ="checkbox" value=<%=i._id%> name="di">
-            <p><%=i.desc%></p>
-            <p><%=i.tag%></p>
-            <p><%=i.date%></p>
+            <div class="intern">
+            <input type ="checkbox" value=<%=i._id%> id='label-1' name="di">
+            <p class="clrdesc"><%=i.desc%></p>
+            <p class=<%=i.tag%>><%=i.tag%></p>
+            <p class="clrdate"><%=i.date%></p>
             <%}%>
             </div>
         </div>
-        <button type="submit">DELETE TODO</button>
+        
         
           
     </form>

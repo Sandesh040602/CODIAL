@@ -5,6 +5,7 @@ const port = 8000;
 const db = require('./config/mongoose');
 console.log('hi');
 const Todo = require('./models/todo');
+//for acessing static files
 
 // acquiring controllers so that to use them in different cases
 app.use(express.urlencoded({
@@ -15,7 +16,8 @@ app.use(function(req,res,next){
     console.log(req.body);
     next();
 });
-
+//for acessing static files
+app.use(express.static('assets'));
 // setting up the view engine
 app.set('view engine','ejs');
 app.set('views', './views');

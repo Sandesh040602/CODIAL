@@ -1,4 +1,90 @@
 body{
-    font: 200;
-    color: blue;
+    background-color: black;
+    color: aquamarine;
+}
+h1{
+    color: rgb(226, 21, 165);
+    text-align: center;
+}
+input{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    color: rgb(25, 27, 25);
+    height: 30px;
+    align-items: center;
+    background-color: blueviolet;
+}
+.inputs{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    color: aquamarine;
+    height: 30px;
+    align-items: center;
+    font-size: large;
+}
+.inputs select{
+    color: black; font-size: large;
+    background-color: blueviolet;
+}
+.inputs button{
+    background-color: crimson;
+}
+
+.delete{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.delete button{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 52px;
+    font-size: large;
+    color: rgb(153, 207, 27);
+    display: block;
+    background-color: rgb(9, 0, 139);
+}
+.Personal{
+    font-size: 23px;
+    height: 30px;width: 100px;
+    color: darkmagenta;
+    font-weight: bold;
+    background-color: palevioletred;
+}
+.Work{
+    font-size: 23px;
+    height: 30px;width: 100px;
+    color: rgb(24, 224, 34);
+    font-weight: bold;
+    background-color: rgb(209, 23, 23);
+}
+.School{
+    font-size: 23px;
+    height: 30px;width: 100px;
+    color: rgb(159, 216, 27);
+    font-weight: bold;
+    background-color: rgb(114, 112, 216);
+}
+.cleaning{
+    font-size: 23px;
+    height: 30px;width: 100px;
+    color: rgb(175, 130, 33);
+    font-weight: bold;
+    background-color: rgb(112, 216, 207);
+}
+
+.intern{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-top: 2px;
+    border-color: aquamarine;
 }
