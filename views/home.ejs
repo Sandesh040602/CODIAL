@@ -30,15 +30,30 @@
         <option value="cleaning">Cleaning</option>
         <option value="School">School</option>
         </select>
-        <button type="submit" >add contact</button>
+        <button type="submit" >ADD TODO</button>
     </form>
-    <ul>
+    <!-- <ul>
         <% for(let i of todo_lis){%>
         <p><%=i.desc%></p>
         <p><%=i.tag%></p>
         <p><%=i.date%></p>
         <%}%>
-    </ul>
+    </ul> -->
+    <form action="/delete-list" method="post">
+        <div>
+        <% for(let i of todo_lis){%>
+            <div>
+            <input type ="checkbox" value=<%=i._id%> name="di">
+            <p><%=i.desc%></p>
+            <p><%=i.tag%></p>
+            <p><%=i.date%></p>
+            <%}%>
+            </div>
+        </div>
+        <button type="submit">DELETE TODO</button>
+        
+          
+    </form>
     <!-- the below script is added to show the example of how static files are linked it 
         was linked using app.use(express.static('assets'));
     
