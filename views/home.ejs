@@ -18,14 +18,18 @@
         
 
     <form action="/todo-list" method="post" class="inputs">
+        <!-- for wrting discreption -->
         <label for="disc">Write a description:</label>
         <input type="text" placeholder="" required name="name" id="disc">
         
+        <!-- for choosing date -->
         <label for="category">Choose a date:</label>
         <input type="date" placeholder="enter the date" required name="phonenos" id="date">
         
+        <!-- for selecting category -->
         <label for="category">Choose a category:</label>
         <select id="category" name="category" required>
+            <!-- different otions in the category -->
         <option value="Personal">Personal</option>
         <option value="Work">Work</option>
         <option value="cleaning">Cleaning</option>
@@ -33,16 +37,11 @@
         </select>
         <button type="submit" >ADD TODO</button>
     </form>
-    <!-- <ul>
-        <% for(let i of todo_lis){%>
-        <p><%=i.desc%></p>
-        <p><%=i.tag%></p>
-        <p><%=i.date%></p>
-        <%}%>
-    </ul> -->
+
     <form class="delete" action="/delete-list" method="post">
         <button type="submit">DELETE TODO</button>
         <div>
+            <!-- showing all the items of the dataset -->
         <% for(let i of todo_lis){%>
             <div class="intern">
             <input type ="checkbox" value=<%=i._id%> id='label-1' name="di">

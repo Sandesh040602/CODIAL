@@ -25,6 +25,7 @@ app.set('views', './views');
 app.use('/',require('./routes/index.js'));// this is our link to the router which
 //ever link is generating will now go to routes/index.js
 
+// listeneing to the port
 app.listen(port,function(err){
     if(err){console.log(`Error in running the server : ${err}`);
     }

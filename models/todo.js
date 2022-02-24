@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+// creating a database and a schema for our todo list with following datatypes
+
+
 const todoSchema = new mongoose.Schema({
     desc:{
         type: String,
